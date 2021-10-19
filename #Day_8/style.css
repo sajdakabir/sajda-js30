@@ -1,0 +1,14 @@
+html, body {
+  margin: 0;
+}
+.controls {
+    margin-left: 30%;
+  }
+
+  input {
+    width: 100px;
+  }
+  label{
+    font-size: 32px;
+  }
+  
