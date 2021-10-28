@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Understanding JavaScript's Capture</title>
+</head>
+
+<body class="bod">
+
+    <div class="one">
+        <div class="two">
+            <div class="three">
+            </div>
+        </div>
+    </div>
+
+    <style>
+        html {
+            box-sizing: border-box;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+
+        div {
+            width: 100%;
+            padding: 100px;
+        }
+
+        .one {
+            background: thistle;
+        }
+
+        .two {
+            background: mistyrose;
+        }
+
+        .three {
+            background: coral;
+        }
+    </style>
+
+    <button></button>
+    <script>
+        const divs = document.querySelectorAll('div');
+        const btn=document.querySelector('button')
+        function logText(e){
+            console.log(this.classList.value);
+             e.stopPropagation(); // stop bubbling!
+            
+        }
+
+        function btnText(){
+            console.log('Hey');
+        }
+
+
+        divs.forEach(div =>
+            div.addEventListener('click',logText)   //bubbling
+
+
+            
+            // div.addEventListener('click',logText,{capture:true})  //capture
+
+        );
+        // btn.addEventListener('click',btnText); // multiple times run the event
+        btn.addEventListener('click',btnText,{once:true});  // only once time run the event
+
+
+    </script>
+</body>
+
+</html>
