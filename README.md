@@ -3,3 +3,8 @@
 
 This is my version of JavaScript30 series by *WesBos*.
 
+
+Thanks,
+
+
+Sajda
