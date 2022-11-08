@@ -1,4 +1,4 @@
-# SajdaKabir | JavaScript30
+# SajdaKabir || JavaScript30
 
 
 This is my version of JavaScript30 series by *WesBos*.
