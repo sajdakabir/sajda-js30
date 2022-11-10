@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Whack A Mole!</title>
+  <link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="level-selection">
+    <button class="btn" data-level="hard">Impossible</button>
+    <button class="btn" data-level="medium">Medium</button>
+    <button class="btn" data-level="easy">Easy</button>
+  </section>
+  <p class="high-score">Last High Score : <u><span class="high-score-span"></span></u> <button onclick="clearHighScore()" class="btn btn-small">Clear</button></p>
+  <h1>Whack-a-mole! <span class="score">0</span></h1>
+  <button class="btn start-btn" onClick="startGame()">Start!</button> <span class="timer"></span>
+
+  <div class="game">
+    <div class="hole hole1">
+      <div class="mole"></div>
+    </div>
+    <div class="hole hole2">
+      <div class="mole"></div>
+    </div>
+    <div class="hole hole3">
+      <div class="mole"></div>
+    </div>
+    <div class="hole hole4">
+      <div class="mole"></div>
+    </div>
+    <div class="hole hole5">
+      <div class="mole"></div>
+    </div>
+    <div class="hole hole6">
+      <div class="mole"></div>
+    </div>
+  </div>
+
+<script>
+  const buttons = document.querySelectorAll('[data-level]')
+  const holes = document.querySelectorAll('.hole');
+  const scoreBoard = document.querySelector('.score');
+  const moles = document.querySelectorAll('.mole');
+  const startBtn = document.querySelector('.start-btn');
+  const highScoreSpan = document.querySelector('.high-score-span');
+  const timerDisplay = document.querySelector('.timer')
+  let lastHole;
+  let timeUp = false;
+  let score = 0;
+  let minTime = 500;
+  let maxTime = 2000;
+  let highScore = localStorage.getItem('score') || 0;
+  let countdown;
+
+  function randomTime(min, max){
+    return Math.round(Math.random() * (max - min) + min);
+  }
+
+  function timer (seconds) {
+  clearInterval(countdown);
+  const now = Date.now()
+  const then = now + (seconds * 1000);
+  displayTimeLeft(seconds);
+  countdown = setInterval(() => {
+    const secondsLeft = Math.round((then - Date.now())  /1000);
+    if(secondsLeft < 0){
+      clearInterval(countdown);
+      return;
+    }
+    displayTimeLeft(secondsLeft)
+  }, 1000)
+}
+
+function displayTimeLeft (seconds) {
+  const minutes = Math.floor(seconds / 60);
+  const remainderSeconds = seconds % 60;
+  const display = `Time Left: ${minutes}:${remainderSeconds < 10 ? '0': ''}${remainderSeconds}`;
+  timerDisplay.textContent = display;
+  document.title = display;
+}
+
+  function randomHole(holes) {
+    const idx = Math.floor(Math.random() * holes.length);
+    const hole = holes[idx];
+    if(hole === lastHole){
+      return randomHole(holes);
+    }
+    lastHole = hole;
+    return hole;
+  }
+
+  function peep () {
+    const time = randomTime(minTime, maxTime);
+    const hole = randomHole(holes);
+    hole.classList.add('up')
+    setTimeout(()=>{
+      hole.classList.remove('up')
+      if(!timeUp) peep();
+    }, time);
+  }
+  function updateHighScore(){
+    highScore = localStorage.getItem('score') || 0
+    highScoreSpan.textContent = highScore;
+  }
+  updateHighScore();
+
+  function levelButtonControl(level){
+    const levelSelected = level || 'easy';
+    buttons.forEach(button => {
+      if(levelSelected === button.dataset.level){
+        button.disabled = true;
+      } else {
+        button.disabled = false;
+      }
+    })
+  }
+  function startButtonControl(){
+    if(!timeUp){
+      startBtn.disabled = true;
+      startBtn.textContent = 'Started!'
+    } else{
+      startBtn.disabled = false;
+      startBtn.textContent = 'Start Again?'
+    }
+  }
+  function clearButtonControl(){
+    if(highScore == 0){
+      document.querySelector('.btn-small').disabled = true;
+    } else {
+      document.querySelector('.btn-small').disabled = false;
+    }
+  }
+  function setHighScore(score){
+    if(score > highScore){
+      localStorage.setItem('score', score);
+    }
+  }
+  function clearHighScore(){
+    highScore = 0;
+    localStorage.clear();
+    updateHighScore();
+    clearButtonControl();
+  }
+  function startGame () {
+    scoreBoard.textContent = 0;
+    timeUp = false;
+    score = 0;
+    peep();
+    startButtonControl();
+    timer(10);
+    setTimeout(()=>{ 
+      timeUp = true;
+      startButtonControl();
+      setHighScore(score);
+      updateHighScore();
+      clearButtonControl();
+    }, 10000);
+  }
+
+  function bonk(e){
+    if(!e.isTrusted) return; // cheater!
+    score++;
+    this.parentNode.classList.remove('up');
+    scoreBoard.textContent = score;
+  }
+  function setLevel(level){
+    switch (level) {
+      case "hard":
+        minTime = 50;
+        maxTime = 500;
+        this.disabled = true;
+        break;
+      case "medium":
+        minTime = 200;
+        maxTime = 1000;
+        this.disabled = true;
+        break;
+      default:
+        minTime = 500;
+        maxTime = 2000;
+        this.disabled = true;
+        break;
+    }
+  }
+  clearButtonControl();
+  levelButtonControl();
+  moles.forEach(mole => mole.addEventListener('click', bonk));
+  buttons.forEach(button => button.addEventListener('click', function(){
+    const level = this.dataset.level;
+    console.log(level);
+    setLevel(level);
+    levelButtonControl(level)
+  }));
+
+</script>
+</body>
+</html>
