@@ -9,6 +9,7 @@ const ranges = player.querySelectorAll('.player__slider');
 const fullscreen =player.querySelector('.fullscreen');
 
 
+
 // build out function
 
 function togglePlay(){
