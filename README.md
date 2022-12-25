@@ -28,6 +28,11 @@ This is my version of JavaScript30 series by *WesBos*.
 #### Here is the view
 ![](https://github.com/sajdakabir/sajda-js30/blob/main/images/day5.jpeg)
 
+### Day 6
+### Type Ahead 👀
+#### Here is the view
+![](https://github.com/sajdakabir/sajda-js30/blob/main/images/day6.jpeg)
+
 #### Demo Link:
 https://sajda-js30.netlify.app/
 
