@@ -68,6 +68,11 @@ This is my version of JavaScript30 series by *WesBos*.
 #### Here is the view
 ![](https://github.com/sajdakabir/sajda-js30/blob/main/images/day13.jpeg)
 
+### Day 14
+### JS Reference VS Copy
+#### Here is the view
+![](https://github.com/sajdakabir/sajda-js30/blob/main/images/day14.jpeg)
+
 #### Demo Link:
 https://sajda-js30.netlify.app/
 
