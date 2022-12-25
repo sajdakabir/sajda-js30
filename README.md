@@ -148,6 +148,11 @@ This is my version of JavaScript30 series by *WesBos*.
 #### Here is the view
 ![](https://github.com/sajdakabir/sajda-js30/blob/main/images/day29.jpeg)
 
+### Day 30
+### Whack A Mole!
+#### Here is the view
+![](https://github.com/sajdakabir/sajda-js30/blob/main/images/day30.jpeg)
+
 #### Demo Link:
 https://sajda-js30.netlify.app/
 
