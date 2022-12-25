@@ -13,6 +13,11 @@ This is my version of JavaScript30 series by *WesBos*.
 #### Here is the view
 ![](https://github.com/sajdakabir/sajda-js30/blob/main/images/day2.jpeg)
 
+### Day 3 
+### CSS Variables and JS
+#### Here is the view
+![](https://github.com/sajdakabir/sajda-js30/blob/main/images/day3.jpeg)
+
 #### Demo Link:
 https://sajda-js30.netlify.app/
 
