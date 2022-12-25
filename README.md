@@ -103,6 +103,11 @@ This is my version of JavaScript30 series by *WesBos*.
 #### Here is the view
 ![](https://github.com/sajdakabir/sajda-js30/blob/main/images/day20.jpeg)
 
+### Day 21
+### GEOLOCATION
+#### Here is the view
+![](https://github.com/sajdakabir/sajda-js30/blob/main/images/day21.jpeg)
+
 #### Demo Link:
 https://sajda-js30.netlify.app/
 
