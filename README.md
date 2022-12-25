@@ -58,6 +58,11 @@ This is my version of JavaScript30 series by *WesBos*.
 #### Here is the view
 ![](https://github.com/sajdakabir/sajda-js30/blob/main/images/day11.jpeg)
 
+### Day 12
+### Key Detection
+#### Here is the view
+![](https://github.com/sajdakabir/sajda-js30/blob/main/images/day12.jpeg)
+
 #### Demo Link:
 https://sajda-js30.netlify.app/
 
