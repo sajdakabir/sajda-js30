@@ -73,6 +73,16 @@ This is my version of JavaScript30 series by *WesBos*.
 #### Here is the view
 ![](https://github.com/sajdakabir/sajda-js30/blob/main/images/day14.jpeg)
 
+### Day 15
+### LocalStorage
+#### Here is the view
+![](https://github.com/sajdakabir/sajda-js30/blob/main/images/day15.jpeg)
+
+### Day 16
+### Mouse Shadow
+#### Here is the view
+![](https://github.com/sajdakabir/sajda-js30/blob/main/images/day16.jpeg)
+
 #### Demo Link:
 https://sajda-js30.netlify.app/
 
