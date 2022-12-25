@@ -113,6 +113,11 @@ This is my version of JavaScript30 series by *WesBos*.
 #### Here is the view
 ![](https://github.com/sajdakabir/sajda-js30/blob/main/images/day22.jpeg)
 
+### Day 23
+### Speech Synthesis
+#### Here is the view
+![](https://github.com/sajdakabir/sajda-js30/blob/main/images/day23.jpeg)
+
 #### Demo Link:
 https://sajda-js30.netlify.app/
 
