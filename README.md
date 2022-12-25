@@ -48,6 +48,11 @@ This is my version of JavaScript30 series by *WesBos*.
 #### Here is the view
 ![](https://github.com/sajdakabir/sajda-js30/blob/main/images/day9.jpeg)
 
+### Day 10
+### Hold Shift to Check Multiple Checkboxes
+#### Here is the view
+![](https://github.com/sajdakabir/sajda-js30/blob/main/images/day10.jpeg)
+
 #### Demo Link:
 https://sajda-js30.netlify.app/
 
