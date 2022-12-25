@@ -23,6 +23,11 @@ This is my version of JavaScript30 series by *WesBos*.
 #### Here is the view
 ![](https://github.com/sajdakabir/sajda-js30/blob/main/images/day4.jpeg)
 
+### Day 5
+### Flex Panels Album
+#### Here is the view
+![](https://github.com/sajdakabir/sajda-js30/blob/main/images/day5.jpeg)
+
 #### Demo Link:
 https://sajda-js30.netlify.app/
 
