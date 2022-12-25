@@ -33,6 +33,11 @@ This is my version of JavaScript30 series by *WesBos*.
 #### Here is the view
 ![](https://github.com/sajdakabir/sajda-js30/blob/main/images/day6.jpeg)
 
+### Day 7
+### Array Cardio 💪💪
+#### Here is the view
+![](https://github.com/sajdakabir/sajda-js30/blob/main/images/day7.jpeg)
+
 #### Demo Link:
 https://sajda-js30.netlify.app/
 
