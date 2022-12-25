@@ -108,6 +108,11 @@ This is my version of JavaScript30 series by *WesBos*.
 #### Here is the view
 ![](https://github.com/sajdakabir/sajda-js30/blob/main/images/day21.jpeg)
 
+### Day 22
+### 👀👀👀Follow Along Nav
+#### Here is the view
+![](https://github.com/sajdakabir/sajda-js30/blob/main/images/day22.jpeg)
+
 #### Demo Link:
 https://sajda-js30.netlify.app/
 
