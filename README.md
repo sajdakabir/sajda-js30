@@ -38,6 +38,16 @@ This is my version of JavaScript30 series by *WesBos*.
 #### Here is the view
 ![](https://github.com/sajdakabir/sajda-js30/blob/main/images/day7.jpeg)
 
+### Day 8
+### HTML5 Canvas
+#### Here is the view
+![](https://github.com/sajdakabir/sajda-js30/blob/main/images/day8.jpeg)
+
+### Day 9
+### Console Tricks!
+#### Here is the view
+![](https://github.com/sajdakabir/sajda-js30/blob/main/images/day9.jpeg)
+
 #### Demo Link:
 https://sajda-js30.netlify.app/
 
