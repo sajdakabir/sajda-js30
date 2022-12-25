@@ -123,9 +123,15 @@ This is my version of JavaScript30 series by *WesBos*.
 #### Here is the view
 ![](https://github.com/sajdakabir/sajda-js30/blob/main/images/day24.jpeg)
 
-### Day 25Understanding JavaScript's Capture
+### Day 25
+### Understanding JavaScript's Capture
 #### Here is the view
 ![](https://github.com/sajdakabir/sajda-js30/blob/main/images/day25.jpeg)
+
+### Day 26
+### Follow Along Nav
+#### Here is the view
+![](https://github.com/sajdakabir/sajda-js30/blob/main/images/day26.jpeg)
 
 #### Demo Link:
 https://sajda-js30.netlify.app/
