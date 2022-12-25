@@ -118,6 +118,11 @@ This is my version of JavaScript30 series by *WesBos*.
 #### Here is the view
 ![](https://github.com/sajdakabir/sajda-js30/blob/main/images/day23.jpeg)
 
+### Day 24
+### Sticky Nav
+#### Here is the view
+![](https://github.com/sajdakabir/sajda-js30/blob/main/images/day24.jpeg)
+
 #### Demo Link:
 https://sajda-js30.netlify.app/
 
