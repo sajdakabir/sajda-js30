@@ -5,7 +5,7 @@ This is my version of JavaScript30 series by *WesBos*.
 
 Would you like to visit this : https://sajda-js30.netlify.app/
 
-30 Amazing small projects.
+Explore a curated collection of 30 incredible small projects, all in one convenient place.
 
 ### Day 1 
 ### DRUM KIT
