@@ -2,6 +2,7 @@
 
 
 This is my version of JavaScript30 series by *WesBos*.
+30 Amazing small projects.
 
 ### Day 1 
 ### DRUM KIT
